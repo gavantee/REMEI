@@ -34,11 +34,13 @@ class MyServer(BaseHTTPRequestHandler):
             f.write(post_data.decode('utf-8'))
             f.close()
             os.system(GCC + ' -S ' + filename + '.c -o ' + filename + '.s')
-            os.system(GCC + ' ' + filename + '.c -o ' + filename + '.o')
-            f = open(filename + '.s', "r")
+            os.system(GCC + ' ' + filename + '.c -o ' + filename + '.o 2> ' + filename + '.stderr')
             self.send_response(200)
             self.send_header("Content-type", "text/html")
             self.end_headers()
+            f = open(filename + '.stderr', "r")
+            self.wfile.write(bytes(f.read(), 'utf-8'))
+            f = open(filename + '.s', "r")
             self.wfile.write(bytes(f.read(), 'utf-8'))
 
 if __name__ == "__main__":        
