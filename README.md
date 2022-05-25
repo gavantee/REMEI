@@ -13,3 +13,12 @@ TODO:
 
 Done:
 - using gcc for assembly
+
+Required:
+- riscv64-elf-gcc
+- riscv64-elf-gdb
+- qemu-riscv64
+
+Running:
+- python backend/server.py
+- ./run_example <path_to_c_program>
