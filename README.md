@@ -8,16 +8,19 @@ The plan is to have an online RISC-V emulator with following features:
 - Few precoded examples of how programing errors could be exploited like gets buffer overflow, format strings... (more examples are welcome or I might steal some from OverTheWire)
 
 TODO:
-- executing programs in qemu and attaching gdb
-- passing commands to gdb and getting responses
+- FRONT EEEEND
+- nice handling of multiple user sessions
 
 Done:
 - using gcc for assembly
+- executing programs in qemu and attaching gdb
+- passing commands to gdb and getting responses
 
 Required:
 - riscv64-elf-gcc
 - riscv64-elf-gdb
 - qemu-riscv64
+- pygdbmi (for now, might end up replacing it with just gdb/mi)
 
 Running:
 - python backend/server.py
