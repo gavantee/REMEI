@@ -1,1 +1,7 @@
-curl -X POST -H "Content-Type: text/html" --data-binary "@$1" localhost:8080/assemble
+curl -X POST -H "Content-Type: text/html" --data-binary "@$1" localhost:8080/compile
+curl -X POST -H "Content-Type: text/html" --data '{"command": "b main", "port": 1234}' localhost:8080/command
+curl -X POST -H "Content-Type: text/html" --data '{"command": "c", "port": 1234}' localhost:8080/command
+curl -X POST -H "Content-Type: text/html" --data '{"command": "disas main", "port": 1234}' localhost:8080/command
+curl -X POST -H "Content-Type: text/html" --data '{"command": "info registers", "port": 1234}' localhost:8080/command
+curl -X POST -H "Content-Type: text/html" --data '{"command": "c", "port": 1234}' localhost:8080/command
+
