@@ -19,6 +19,7 @@ Required:
 - riscv64-elf-gdb
 - qemu-riscv64
 - pygdbmi (for now, might end up replacing it with just gdb/mi)
+- jq (just for a backend test for now)
 
 Running:
 - python backend/server.py
