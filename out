@@ -1,0 +1,1 @@
+{"code": "\t.file\t\"GrfW3EL0bZy96Oyr3sqg.c\"\n\t.option nopic\n\t.attribute arch, \"rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0\"\n\t.attribute unaligned_access, 0\n\t.attribute stack_align, 16\n\t.text\n\t.ident\t\"GCC: (Arch Linux Repositories) 12.1.0\"\n", "errors": "", "port": 17515}

@@ -56,8 +56,9 @@ class MyServer(BaseHTTPRequestHandler):
                 f = open(f"{filename}.stderr", "r")
                 res["code"] = ""
                 res["errors"] = f.read()
-            #port = random.randint(10000, 50000)
-            port = 1234
+            
+            # Qemu <-> GDB port
+            port  = random.randint(10000, 50000)
             res["port"] = port
             self.wfile.write(bytes(json.dumps(res), "utf-8"))
             threading.Thread(target=run_qemu, args = [filename, port]).start()

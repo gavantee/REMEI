@@ -8,13 +8,11 @@ The plan is to have an online RISC-V emulator with following features:
 - Few precoded examples of how programing errors could be exploited like gets buffer overflow, format strings... (more examples are welcome or I might steal some from OverTheWire)
 
 TODO:
+- ~~using gcc for assembly~~
+- ~~executing programs in qemu and attaching gdb~~
+- ~~passing commands to gdb and getting responses~~
+- ~~nice handling of multiple user sessions (not really nice but whatever)~~
 - FRONT EEEEND
-- nice handling of multiple user sessions
-
-Done:
-- using gcc for assembly
-- executing programs in qemu and attaching gdb
-- passing commands to gdb and getting responses
 
 Required:
 - riscv64-elf-gcc
